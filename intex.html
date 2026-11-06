@@ -1,0 +1,400 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sri Arumuga Wood | Premium CNC Studio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header>
+    <nav class="navbar">
+
+        <div class="logo">
+            <span>
+    <img src="images/images-removebg-preview.png"
+         alt="Murugan Logo"
+         width="45"
+         height="45"
+         style="width:45px; height:45px; object-fit:contain;">
+</span>
+            <div>
+                <h2>SRI ARUMUGA CNC LATHE</h2>
+                <small>WHERE WOOD BECOMES ART</small>
+            </div>
+        </div>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">CNC Designs</a></li>
+            <li><a href="#gallery">Our Gallery</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+
+        <div class="nav-actions">
+            <button id="themeBtn">☾</button>
+            <button class="enquiry-btn" onclick="openEnquiry()">Enquiry ↗</button>
+            <button class="menu-btn" id="menuBtn">☰</button>
+        </div>
+
+    </nav>
+</header>
+
+
+<!-- HERO SECTION -->
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <p class="tagline">✦ PREMIUM WOODWORKING & CNC STUDIO ✦</p>
+
+        <h1>
+            Precision in Every Cut,
+            <span>Beauty in Every Design.</span>
+        </h1>
+
+        <p>
+            Experience the perfect blend of traditional craftsmanship
+            and modern CNC technology. We transform ordinary wood
+            into extraordinary masterpieces.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#services" class="primary-btn">Explore Our Designs →</a>
+            <a href="#about" class="secondary-btn">Know More</a>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FEATURES -->
+<section class="features">
+
+    <div class="feature">
+        <span>◇</span>
+        <div>
+            <h3>Premium Quality</h3>
+            <p>Woodwork</p>
+        </div>
+    </div>
+
+    <div class="feature">
+        <span>⚙</span>
+        <div>
+            <h3>Advanced CNC</h3>
+            <p>Technology</p>
+        </div>
+    </div>
+
+    <div class="feature">
+        <span>✥</span>
+        <div>
+            <h3>Custom Designs</h3>
+            <p>Unique Solutions</p>
+        </div>
+    </div>
+
+    <div class="feature">
+        <span>♧</span>
+        <div>
+            <h3>On-Time Delivery</h3>
+            <p>Customer First</p>
+        </div>
+    </div>
+
+</section>
+
+
+<!-- ABOUT SECTION -->
+<section class="about section" id="about">
+
+    <div class="about-image">
+       <img src="images/image1.jpg" alt="Woodworking">
+    </div>
+
+    <div class="about-content">
+
+        <p class="section-tag">ABOUT SRI ARUMUGA WOOD</p>
+
+        <h2>Crafting Excellence with CNC Precision</h2>
+
+        <p>
+            We specialize in CNC wood turning, wood carving
+            and customized furniture designs.
+
+            Our passion is to transform your ideas into
+            timeless wooden masterpieces.
+        </p>
+
+        <div class="about-stats">
+            <div>
+                <h3>10+</h3>
+                <p>Design Categories</p>
+            </div>
+
+            <div>
+                <h3>100%</h3>
+                <p>Quality Focus</p>
+            </div>
+        </div>
+
+        <a href="#contact" class="primary-btn">Know More →</a>
+
+    </div>
+
+</section>
+
+
+<!-- SERVICES -->
+<section class="services section" id="services">
+
+    <div class="section-heading">
+        <p class="section-tag">WHAT WE DO</p>
+        <h2>Our Premium Services</h2>
+        <p>Innovative designs. Traditional craftsmanship.</p>
+    </div>
+
+    <div class="service-container">
+
+        <div class="service-card">
+            <span>⚙️</span>
+            <h3>CNC Lathe Works</h3>
+            <p>Precision wood turning and CNC designs.</p>
+        </div>
+
+        <div class="service-card">
+            <span>🌸</span>
+            <h3>Wood Carving</h3>
+            <p>Beautiful artistic patterns and carvings.</p>
+        </div>
+
+        <div class="service-card">
+            <span>🪑</span>
+            <h3>Custom Furniture</h3>
+            <p>Unique furniture built around your ideas.</p>
+        </div>
+
+        <div class="service-card">
+            <span>🏛️</span>
+            <h3>Decorative Panels</h3>
+            <p>Elegant wooden panels for interiors.</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PRODUCTS -->
+<section class="products section" id="products">
+
+    <div class="section-heading">
+        <p class="section-tag">OUR COLLECTION</p>
+        <h2>Explore Our Designs</h2>
+    </div>
+
+    <div class="product-controls">
+
+        <input type="search"
+               id="searchInput"
+               placeholder="Search designs...">
+
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="doors">Doors</button>
+        <button class="filter-btn" data-filter="furniture">Furniture</button>
+        <button class="filter-btn" data-filter="carving">Carving</button>
+
+    </div>
+
+    <div class="product-container" id="productContainer">
+
+        <div class="product-card" data-category="doors">
+           <img src="images/image2.jpeg">
+            <div class="product-info">
+                <h3>Royal Wooden Doors</h3>
+                <p>Traditional premium door designs.</p>
+                <button onclick="enquireProduct('Royal Wooden Doors')">Enquire Now</button>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="furniture">
+            <img src="images/image3.jpeg" alt="Luxury Furniture">
+            <div class="product-info">
+                <h3>Luxury Furniture</h3>
+                <p>Elegant customized furniture.</p>
+                <button onclick="enquireProduct('Luxury Furniture')">Enquire Now</button>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="carving">
+            <img src="images/image4.jpeg" alt="Artistic Carving">
+            <div class="product-info">
+                <h3>Artistic Carving</h3>
+                <p>Creative wooden carving patterns.</p>
+                <button onclick="enquireProduct('Artistic Carving')">Enquire Now</button>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- GALLERY -->
+<section class="gallery section" id="gallery">
+
+    <div class="section-heading">
+        <p class="section-tag">OUR WORKS</p>
+        <h2>Our Creative Gallery</h2>
+    </div>
+
+    <div class="gallery-container">
+
+       <img src="images/1.jpg">
+    <img src="images/2.jpg">
+    <img src="images/3.jpg">
+    <img src="images/4.jpg">
+    <img src="images/5.jpg">
+    <img src="images/6.jpg">
+    </div>
+
+</section>
+
+
+<!-- CTA -->
+<section class="cta">
+
+    <h2>Let's Create Something Beautiful</h2>
+
+    <p>Your dream wooden design starts here.</p>
+
+    <button class="primary-btn" onclick="openEnquiry()">
+        Get Free Enquiry →
+    </button>
+
+</section>
+
+
+<!-- CONTACT -->
+<section class="contact section" id="contact">
+
+    <div class="section-heading">
+        <p class="section-tag">GET IN TOUCH</p>
+        <h2>Contact Us</h2>
+    </div>
+
+    <div class="contact-container">
+
+        <div class="contact-info">
+
+            <h2>Sri Arumuga Wood</h2>
+
+            <p>📍 Location: 418, Rice mill road Rajapalayam</p>
+            <p>📞 Phone: 9843167379</p>
+            <p>📩 Email: arunchalam32@gmail.com</p>
+            <p>☀️ Monday - Saturday</p>
+            <p>🕐 9AM - 9PM</p>
+
+        </div>
+
+        <form id="contactForm">
+
+            <input type="text" id="cName"
+                   placeholder="Your Name" required>
+
+            <input type="email" id="cEmail"
+                   placeholder="Your Email" required>
+
+            <input type="tel" id="cPhone"
+                   placeholder="Phone Number" required>
+
+            <select id="cService" required>
+                <option value="">Select Service</option>
+                <option>CNC Lathe Works</option>
+                <option>Wood Carving</option>
+                <option>Custom Furniture</option>
+                <option>Decorative Panels</option>
+            </select>
+
+            <textarea id="cMessage"
+                      placeholder="Your Message" required></textarea>
+
+            <button type="submit" class="primary-btn">
+                Submit Enquiry →
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+    <h2>SRI ARUMUGA WOOD</h2>
+
+    <p>Where Wood Becomes Art.</p>
+
+    <p>© 2026 Sri Arumuga Wood. All Rights Reserved.</p>
+
+</footer>
+
+
+<!-- ENQUIRY POPUP -->
+<div class="modal" id="enquiryModal">
+
+    <div class="modal-content">
+
+        <button class="close-btn" onclick="closeEnquiry()">×</button>
+
+        <h2>Project Enquiry</h2>
+
+        <form id="modalForm">
+
+            <input type="text" id="mName"
+                   placeholder="Your Name" required>
+
+            <input type="tel" id="mPhone"
+                   placeholder="Phone Number" required>
+
+            <input type="text" id="mProduct"
+                   placeholder="Product / Service" required>
+
+            <textarea id="mMessage"
+                      placeholder="Project Details"></textarea>
+
+            <button type="submit" class="primary-btn">
+                Send Enquiry
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<!-- NOTIFICATION -->
+<div id="toast"></div>
+
+<button id="backToTop" onclick="scrollToTop()">↑</button>
+
+
+<!-- JAVASCRIPT -->
+<script src="script.js"></script>
+
+</body>
+</html>
